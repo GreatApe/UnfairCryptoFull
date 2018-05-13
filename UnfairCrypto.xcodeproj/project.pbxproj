@@ -168,10 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				220C09D220A89FA4004F8E54 /* Bitmex.swift */,
-				220C09D320A89FA4004F8E54 /* BxSocketAPI.swift */,
 				220C09D420A89FA4004F8E54 /* Rest */,
 				220C09E920A89FA4004F8E54 /* Socket */,
-				220C09EA20A89FA4004F8E54 /* BxRestAPI.swift */,
 			);
 			path = Bitmex;
 			sourceTree = "<group>";
@@ -179,6 +177,7 @@
 		220C09D420A89FA4004F8E54 /* Rest */ = {
 			isa = PBXGroup;
 			children = (
+				220C09EA20A89FA4004F8E54 /* BxRestAPI.swift */,
 				220C09D520A89FA4004F8E54 /* BxSettlement.swift */,
 				220C09D620A89FA4004F8E54 /* BxOrderbook.swift */,
 				220C09D720A89FA4004F8E54 /* BxChat.swift */,
@@ -206,6 +205,7 @@
 		220C09E920A89FA4004F8E54 /* Socket */ = {
 			isa = PBXGroup;
 			children = (
+				220C09D320A89FA4004F8E54 /* BxSocketAPI.swift */,
 			);
 			path = Socket;
 			sourceTree = "<group>";

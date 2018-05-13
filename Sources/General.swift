@@ -90,11 +90,17 @@ extension Quote: Comparable {
 public typealias QuoteBook = (bids: [Quote], asks: [Quote])
 
 extension String {
-    func toDouble() throws -> Double {
+    public func toDouble() throws -> Double {
         guard let double = Double(self) else {
             throw NSError(domain: "JSON", code: 555, userInfo: ["Issue" : "Failed to convert string to double (\(self))"])
         }
         return double
+    }
+}
+
+extension TimeInterval {
+    public var toYears: Double {
+        return self/(365*24*3600)
     }
 }
 
