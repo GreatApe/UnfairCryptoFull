@@ -16,8 +16,8 @@ public struct BnResponse {
     }
 
     public struct ExchangeInfo: Decodable {
-        let timezone: String
-        let serverTime: Date
+        public let timezone: String
+        public let serverTime: Date
 
         struct RateLimit: Decodable {
             enum RateLimitType: String, Decodable {
@@ -30,21 +30,21 @@ public struct BnResponse {
                 case minute = "MINUTE"
                 case day = "DAY"
             }
-            let rateLimitType: RateLimitType
-            let interval: RateLimitInterval
-            let limit: Int
+            public let rateLimitType: RateLimitType
+            public let interval: RateLimitInterval
+            public let limit: Int
         }
 
-        let rateLimits: [RateLimit]
+        public let rateLimits: [RateLimit]
         public enum ExchangeFilter: Decodable {
             case maxNumOrders(limit: Int)
             case maxAlgoOrders(limit: Int)
         }
 
-        let exchangeFilters: [ExchangeFilter] // FIXME: test
+        public let exchangeFilters: [ExchangeFilter] // FIXME: test
 
         public struct SymbolInfo: Decodable {
-            let symbol: BnSymbol
+            public let symbol: BnSymbol
 
             enum SymbolStatus: String, Decodable {
                 case preTrading = "PRE_TRADING"
@@ -56,15 +56,15 @@ public struct BnResponse {
                 case onBreak = "BREAK"
             }
 
-            let status: SymbolStatus
+            public let status: SymbolStatus
 
-            let baseAsset: BnAsset // enum: fixme: test
-            let baseAssetPrecision: Int
-            let quoteAsset: BnAsset // enum: fixme: test
-            let quotePrecision: Int
+            public let baseAsset: BnAsset // enum: fixme: test
+            public let baseAssetPrecision: Int
+            public let quoteAsset: BnAsset // enum: fixme: test
+            public let quotePrecision: Int
 
-            let orderTypes: [BnOrderType]
-            let icebergAllowed: Bool
+            public let orderTypes: [BnOrderType]
+            public let icebergAllowed: Bool
 
             public enum Filter: Decodable {
                 case priceFilter(minPrice: Double, maxPrice: Double, tickSize: Double)
@@ -74,162 +74,162 @@ public struct BnResponse {
                 case maxAlgoOrders(limit: Int)
             }
 
-            let filters: [Filter]
+            public let filters: [Filter]
         }
 
-        let symbols: [SymbolInfo]
+        public let symbols: [SymbolInfo]
     }
 
     public struct Depth: Decodable {
-        let lastUpdateId: Int
-        let bids: [Quote]
-        let asks: [Quote]
+        public let lastUpdateId: Int
+        public let bids: [Quote]
+        public let asks: [Quote]
     }
 
     public struct Trade: Decodable {
-        let id: Int64
-        let price: Double
-        let quantity: Double
-        let time: Date
-        let isBuyerMaker: Bool
-        let isBestMatch: Bool
+        public let id: Int64
+        public let price: Double
+        public let quantity: Double
+        public let time: Date
+        public let isBuyerMaker: Bool
+        public let isBestMatch: Bool
     }
 
     public typealias HistoricalTrade = Trade
 
     public struct AggTrade: Decodable {
-        let aggregateTradeId: Int64
-        let price: Double
-        let quantity: Double
-        let firstTradeId: Int64
-        let lastTradeId: Int64
-        let timestamp: Date
-        let isBuyerMaker: Bool
-        let isBestMatch: Bool
+        public let aggregateTradeId: Int64
+        public let price: Double
+        public let quantity: Double
+        public let firstTradeId: Int64
+        public let lastTradeId: Int64
+        public let timestamp: Date
+        public let isBuyerMaker: Bool
+        public let isBestMatch: Bool
     }
 
     public struct Kline: Decodable {
-        let openTime: Date
-        let open: Double
-        let high: Double
-        let low: Double
-        let close: Double
-        let volume: Double
-        let closeTime: Date
-        let quoteAssetVolume: Double
-        let numberOfTrades: Int
-        let takerBuyBaseAssetVolume: Double
-        let takerBuyQuoteAssetVolume: Double
+        public let openTime: Date
+        public let open: Double
+        public let high: Double
+        public let low: Double
+        public let close: Double
+        public let volume: Double
+        public let closeTime: Date
+        public let quoteAssetVolume: Double
+        public let numberOfTrades: Int
+        public let takerBuyBaseAssetVolume: Double
+        public let takerBuyQuoteAssetVolume: Double
     }
 
     public struct Change24h: Decodable {
-        let symbol: BnSymbol
-        let priceChange: Double
-        let priceChangePercent: Double
-        let weightedAvgPrice: Double
-        let prevClosePrice: Double
-        let lastPrice: Double
-        let lastQty: Double
-        let bidPrice: Double
-        let askPrice: Double
-        let openPrice: Double
-        let highPrice: Double
-        let lowPrice: Double
-        let volume: Double
-        let quoteVolume: Double
-        let openTime: Date
-        let closeTime: Date
-        let fristId: Int64  // First tradeId
-        let lastId: Int64   // Last tradeId
-        let count: Int      // Trade count
+        public let symbol: BnSymbol
+        public let priceChange: Double
+        public let priceChangePercent: Double
+        public let weightedAvgPrice: Double
+        public let prevClosePrice: Double
+        public let lastPrice: Double
+        public let lastQty: Double
+        public let bidPrice: Double
+        public let askPrice: Double
+        public let openPrice: Double
+        public let highPrice: Double
+        public let lowPrice: Double
+        public let volume: Double
+        public let quoteVolume: Double
+        public let openTime: Date
+        public let closeTime: Date
+        public let fristId: Int64  // First tradeId
+        public let lastId: Int64   // Last tradeId
+        public let count: Int      // Trade count
     }
 
     public struct Price: Decodable {
-        let symbol: BnSymbol
-        let price: Double
+        public let symbol: BnSymbol
+        public let price: Double
     }
 
     public struct BookTicker: Decodable {
-        let symbol: BnSymbol
-        let bidPrice: Double
-        let bidQuantity: Double
-        let askPrice: Double
-        let askQuantity: Double
+        public let symbol: BnSymbol
+        public let bidPrice: Double
+        public let bidQuantity: Double
+        public let askPrice: Double
+        public let askQuantity: Double
     }
 
     public struct Order {
         public struct Ack: Decodable {
-            let symbol: BnSymbol
-            let orderId: Int64
-            let clientOrderId: String
-            let transactTime: Date
+            public let symbol: BnSymbol
+            public let orderId: Int64
+            public let clientOrderId: String
+            public let transactTime: Date
         }
 
         public struct Result: Decodable {
-            let symbol: BnSymbol
-            let orderId: Int64
-            let clientOrderId: String
-            let transactTime: Date
+            public let symbol: BnSymbol
+            public let orderId: Int64
+            public let clientOrderId: String
+            public let transactTime: Date
 
-            let price: Double
-            let originalQuantity: Double
-            let executedQuantity: Double
-            let status: BnOrderStatus
-            let timeInForce: BnTimeInForce
-            let type: BnOrderType
-            let side: BnOrderSide
+            public let price: Double
+            public let originalQuantity: Double
+            public let executedQuantity: Double
+            public let status: BnOrderStatus
+            public let timeInForce: BnTimeInForce
+            public let type: BnOrderType
+            public let side: BnOrderSide
         }
 
         public struct Full: Decodable {
-            let symbol: BnSymbol
-            let orderId: Int64
-            let clientOrderId: String
-            let transactTime: Date
+            public let symbol: BnSymbol
+            public let orderId: Int64
+            public let clientOrderId: String
+            public let transactTime: Date
 
-            let price: Double
-            let originalQuantity: Double
-            let executedQuantity: Double
-            let status: BnOrderStatus
-            let timeInForce: BnTimeInForce
-            let type: BnOrderType
-            let side: BnOrderSide
+            public let price: Double
+            public let originalQuantity: Double
+            public let executedQuantity: Double
+            public let status: BnOrderStatus
+            public let timeInForce: BnTimeInForce
+            public let type: BnOrderType
+            public let side: BnOrderSide
 
             public struct Fill: Decodable {
-                let price: Double
-                let quantity: Double
-                let commission: Double
-                let commissionAsset: BnAsset // fixme: test
+                public let price: Double
+                public let quantity: Double
+                public let commission: Double
+                public let commissionAsset: BnAsset // fixme: test
             }
 
-            let fills: [Fill]
+            public let fills: [Fill]
         }
     }
 
     public struct TestOrder: Decodable { }
 
     public struct QueryOrder: Decodable {
-        let symbol: BnSymbol
-        let orderId: Int64
-        let clientOrderId: String
-        let price: Double
-        let originalQuantity: Double
-        let executedQuantity: Double
-        let status: BnOrderStatus
-        let timeInForce: BnTimeInForce
-        let type: BnOrderType
-        let side: BnOrderSide
+        public let symbol: BnSymbol
+        public let orderId: Int64
+        public let clientOrderId: String
+        public let price: Double
+        public let originalQuantity: Double
+        public let executedQuantity: Double
+        public let status: BnOrderStatus
+        public let timeInForce: BnTimeInForce
+        public let type: BnOrderType
+        public let side: BnOrderSide
 
-        let stopPrice: Double
-        let icebergQuantity: Double
-        let time: Date
-        let isWorking: Bool
+        public let stopPrice: Double
+        public let icebergQuantity: Double
+        public let time: Date
+        public let isWorking: Bool
     }
 
     public struct CancelOrder: Decodable {
-        let symbol: BnSymbol
-        let origClientOrderId: String
-        let orderId: Int64
-        let clientOrderId: String
+        public let symbol: BnSymbol
+        public let origClientOrderId: String
+        public let orderId: Int64
+        public let clientOrderId: String
     }
 
     public typealias OpenOrders = QueryOrder
@@ -237,39 +237,39 @@ public struct BnResponse {
     public typealias AllOrders = QueryOrder
 
     public struct Account: Decodable {
-        let makerCommission: Int
-        let takerCommission: Int
-        let buyerCommission: Int
-        let sellerCommission: Int
+        public let makerCommission: Int
+        public let takerCommission: Int
+        public let buyerCommission: Int
+        public let sellerCommission: Int
 
-        let canTrade: Bool
-        let canWithdraw: Bool
-        let canDeposit: Bool
-        let updateTime: Date
+        public let canTrade: Bool
+        public let canWithdraw: Bool
+        public let canDeposit: Bool
+        public let updateTime: Date
 
         struct Balance: Decodable {
-            let asset: BnAsset // fixme: test
-            let free: Double
-            let locked: Double
+            public let asset: BnAsset // fixme: test
+            public let free: Double
+            public let locked: Double
         }
 
-        let balances: [Balance]
+        public let balances: [Balance]
 
         var nonEmptyBalances: [Balance] { return balances.filter { $0.free + $0.locked > 0 } }
     }
 
     public struct MyTrades: Decodable {
-        let id: Int64
-        let orderId: Int64
-        let price: Double
-        let quantity: Double
-        let commission: Double
-        let commissionAsset: BnAsset // fixme: test
-        let time: Date
+        public let id: Int64
+        public let orderId: Int64
+        public let price: Double
+        public let quantity: Double
+        public let commission: Double
+        public let commissionAsset: BnAsset // fixme: test
+        public let time: Date
 
-        let isBuyer: Bool
-        let isMaker: Bool
-        let isBestMatch: Bool
+        public let isBuyer: Bool
+        public let isMaker: Bool
+        public let isBestMatch: Bool
     }
 }
 

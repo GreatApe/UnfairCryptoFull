@@ -10,15 +10,15 @@ import Foundation
 import Alamofire
 
 public protocol StringConvertible { var stringValue: String { get } }
-extension String: StringConvertible { public var stringValue: String { return self } }
-extension Bool: StringConvertible { public var stringValue: String { return self ? "true" : "false" } }
-extension Int: StringConvertible { public var stringValue: String { return String(self) } }
-extension Int64: StringConvertible { public var stringValue: String { return String(self) } }
-extension Double: StringConvertible { public var stringValue: String { return String(self) } }
+public extension String: StringConvertible { public var stringValue: String { return self } }
+public extension Bool: StringConvertible { public var stringValue: String { return self ? "true" : "false" } }
+public extension Int: StringConvertible { public var stringValue: String { return String(self) } }
+public extension Int64: StringConvertible { public var stringValue: String { return String(self) } }
+public extension Double: StringConvertible { public var stringValue: String { return String(self) } }
 
-extension RawRepresentable where RawValue == String { public var stringValue: String { return rawValue } }
+public extension RawRepresentable where RawValue == String { public var stringValue: String { return rawValue } }
 
-extension Array: StringConvertible where Element: StringConvertible {
+public extension Array: StringConvertible where Element: StringConvertible {
     public var stringValue: String {
         return self.map { $0.stringValue }.joined(separator: ",")
     }
@@ -57,8 +57,8 @@ public protocol QuoteStreamer: Subscribable {
 }
 
 public struct Quote: Decodable, Equatable, CustomStringConvertible {
-    let price: Double
-    let size: Double
+    public let price: Double
+    public let size: Double
 
     public init(price: Double, size: Double) {
         self.price = price
@@ -77,8 +77,8 @@ public struct Quote: Decodable, Equatable, CustomStringConvertible {
 }
 
 public enum Side: String, Decodable {
-    case buy = "Buy"
-    case sell = "Sell"
+    public case buy = "Buy"
+    public case sell = "Sell"
 }
 
 extension Quote: Comparable {
@@ -99,7 +99,7 @@ extension String {
 }
 
 public enum RootSymbol: String, Decodable {
-    static var all: [RootSymbol] {
+    public static var all: [RootSymbol] {
         return [.xbt, .ada, .bch, .dash, .eth, .etc, .ltc, .xmr, .xrp, .xlm, .zec, .neo]
     }
 
@@ -116,7 +116,7 @@ public enum RootSymbol: String, Decodable {
     case zec = "ZEC"
     case neo = "NEO"
 
-    init?(bxSymbol: String) {
+    public init?(bxSymbol: String) {
         guard let rootSymbol = RootSymbol.all.first(where: { bxSymbol.hasPrefix($0.bxRootSymbol) }) else {
             return nil
         }
@@ -124,7 +124,7 @@ public enum RootSymbol: String, Decodable {
         self = rootSymbol
     }
 
-    init?(bnSymbol: String) {
+    public init?(bnSymbol: String) {
         guard let rootSymbol = RootSymbol.all.first(where: { bnSymbol == $0.bnStream }) else {
             return nil
         }

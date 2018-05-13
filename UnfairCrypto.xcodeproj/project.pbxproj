@@ -7,6 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220C09EB20A89FA4004F8E54 /* Bitmex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D220A89FA4004F8E54 /* Bitmex.swift */; };
+		220C09EC20A89FA4004F8E54 /* Bitmex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D220A89FA4004F8E54 /* Bitmex.swift */; };
+		220C09ED20A89FA4004F8E54 /* BxSocketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D320A89FA4004F8E54 /* BxSocketAPI.swift */; };
+		220C09EE20A89FA4004F8E54 /* BxSocketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D320A89FA4004F8E54 /* BxSocketAPI.swift */; };
+		220C09EF20A89FA4004F8E54 /* BxSettlement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D520A89FA4004F8E54 /* BxSettlement.swift */; };
+		220C09F020A89FA4004F8E54 /* BxSettlement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D520A89FA4004F8E54 /* BxSettlement.swift */; };
+		220C09F120A89FA4004F8E54 /* BxOrderbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D620A89FA4004F8E54 /* BxOrderbook.swift */; };
+		220C09F220A89FA4004F8E54 /* BxOrderbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D620A89FA4004F8E54 /* BxOrderbook.swift */; };
+		220C09F320A89FA4004F8E54 /* BxChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D720A89FA4004F8E54 /* BxChat.swift */; };
+		220C09F420A89FA4004F8E54 /* BxChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D720A89FA4004F8E54 /* BxChat.swift */; };
+		220C09F520A89FA4004F8E54 /* BxTrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D820A89FA4004F8E54 /* BxTrade.swift */; };
+		220C09F620A89FA4004F8E54 /* BxTrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D820A89FA4004F8E54 /* BxTrade.swift */; };
+		220C09F720A89FA4004F8E54 /* BxPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D920A89FA4004F8E54 /* BxPosition.swift */; };
+		220C09F820A89FA4004F8E54 /* BxPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09D920A89FA4004F8E54 /* BxPosition.swift */; };
+		220C09F920A89FA4004F8E54 /* BxRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09DA20A89FA4004F8E54 /* BxRequest.swift */; };
+		220C09FA20A89FA4004F8E54 /* BxRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09DA20A89FA4004F8E54 /* BxRequest.swift */; };
+		220C09FB20A89FA4004F8E54 /* BxInsurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09DB20A89FA4004F8E54 /* BxInsurance.swift */; };
+		220C09FC20A89FA4004F8E54 /* BxInsurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09DB20A89FA4004F8E54 /* BxInsurance.swift */; };
+		220C09FD20A89FA4004F8E54 /* BxFunding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09DC20A89FA4004F8E54 /* BxFunding.swift */; };
+		220C09FE20A89FA4004F8E54 /* BxFunding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09DC20A89FA4004F8E54 /* BxFunding.swift */; };
+		220C09FF20A89FA4004F8E54 /* BxNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09DD20A89FA4004F8E54 /* BxNotification.swift */; };
+		220C0A0020A89FA4004F8E54 /* BxNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09DD20A89FA4004F8E54 /* BxNotification.swift */; };
+		220C0A0120A89FA4004F8E54 /* BxQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09DE20A89FA4004F8E54 /* BxQuote.swift */; };
+		220C0A0220A89FA4004F8E54 /* BxQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09DE20A89FA4004F8E54 /* BxQuote.swift */; };
+		220C0A0320A89FA4004F8E54 /* BxUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09DF20A89FA4004F8E54 /* BxUser.swift */; };
+		220C0A0420A89FA4004F8E54 /* BxUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09DF20A89FA4004F8E54 /* BxUser.swift */; };
+		220C0A0520A89FA4004F8E54 /* BxExecution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E020A89FA4004F8E54 /* BxExecution.swift */; };
+		220C0A0620A89FA4004F8E54 /* BxExecution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E020A89FA4004F8E54 /* BxExecution.swift */; };
+		220C0A0720A89FA4004F8E54 /* BxOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E120A89FA4004F8E54 /* BxOrder.swift */; };
+		220C0A0820A89FA4004F8E54 /* BxOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E120A89FA4004F8E54 /* BxOrder.swift */; };
+		220C0A0920A89FA4004F8E54 /* BxAnnouncement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E220A89FA4004F8E54 /* BxAnnouncement.swift */; };
+		220C0A0A20A89FA4004F8E54 /* BxAnnouncement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E220A89FA4004F8E54 /* BxAnnouncement.swift */; };
+		220C0A0B20A89FA4004F8E54 /* BxSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E320A89FA4004F8E54 /* BxSchema.swift */; };
+		220C0A0C20A89FA4004F8E54 /* BxSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E320A89FA4004F8E54 /* BxSchema.swift */; };
+		220C0A0D20A89FA4004F8E54 /* BxLeaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E420A89FA4004F8E54 /* BxLeaderboard.swift */; };
+		220C0A0E20A89FA4004F8E54 /* BxLeaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E420A89FA4004F8E54 /* BxLeaderboard.swift */; };
+		220C0A0F20A89FA4004F8E54 /* BxInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E520A89FA4004F8E54 /* BxInstrument.swift */; };
+		220C0A1020A89FA4004F8E54 /* BxInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E520A89FA4004F8E54 /* BxInstrument.swift */; };
+		220C0A1120A89FA4004F8E54 /* BxLiquidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E620A89FA4004F8E54 /* BxLiquidation.swift */; };
+		220C0A1220A89FA4004F8E54 /* BxLiquidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E620A89FA4004F8E54 /* BxLiquidation.swift */; };
+		220C0A1320A89FA4004F8E54 /* BxApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E720A89FA4004F8E54 /* BxApiKey.swift */; };
+		220C0A1420A89FA4004F8E54 /* BxApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E720A89FA4004F8E54 /* BxApiKey.swift */; };
+		220C0A1520A89FA4004F8E54 /* BxStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E820A89FA4004F8E54 /* BxStats.swift */; };
+		220C0A1620A89FA4004F8E54 /* BxStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09E820A89FA4004F8E54 /* BxStats.swift */; };
+		220C0A1720A89FA4004F8E54 /* BxRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09EA20A89FA4004F8E54 /* BxRestAPI.swift */; };
+		220C0A1820A89FA4004F8E54 /* BxRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C09EA20A89FA4004F8E54 /* BxRestAPI.swift */; };
 		2265491C2074F40A0059E5D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2265491A2074F40A0059E5D5 /* Alamofire.framework */; };
 		2265491D2074F40A0059E5D5 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2265491B2074F40A0059E5D5 /* Starscream.framework */; };
 		226549212074F4330059E5D5 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2265491F2074F4330059E5D5 /* Starscream.framework */; };
@@ -48,6 +94,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		220C09D220A89FA4004F8E54 /* Bitmex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bitmex.swift; sourceTree = "<group>"; };
+		220C09D320A89FA4004F8E54 /* BxSocketAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxSocketAPI.swift; sourceTree = "<group>"; };
+		220C09D520A89FA4004F8E54 /* BxSettlement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxSettlement.swift; sourceTree = "<group>"; };
+		220C09D620A89FA4004F8E54 /* BxOrderbook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxOrderbook.swift; sourceTree = "<group>"; };
+		220C09D720A89FA4004F8E54 /* BxChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxChat.swift; sourceTree = "<group>"; };
+		220C09D820A89FA4004F8E54 /* BxTrade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxTrade.swift; sourceTree = "<group>"; };
+		220C09D920A89FA4004F8E54 /* BxPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxPosition.swift; sourceTree = "<group>"; };
+		220C09DA20A89FA4004F8E54 /* BxRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxRequest.swift; sourceTree = "<group>"; };
+		220C09DB20A89FA4004F8E54 /* BxInsurance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxInsurance.swift; sourceTree = "<group>"; };
+		220C09DC20A89FA4004F8E54 /* BxFunding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxFunding.swift; sourceTree = "<group>"; };
+		220C09DD20A89FA4004F8E54 /* BxNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxNotification.swift; sourceTree = "<group>"; };
+		220C09DE20A89FA4004F8E54 /* BxQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxQuote.swift; sourceTree = "<group>"; };
+		220C09DF20A89FA4004F8E54 /* BxUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxUser.swift; sourceTree = "<group>"; };
+		220C09E020A89FA4004F8E54 /* BxExecution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxExecution.swift; sourceTree = "<group>"; };
+		220C09E120A89FA4004F8E54 /* BxOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxOrder.swift; sourceTree = "<group>"; };
+		220C09E220A89FA4004F8E54 /* BxAnnouncement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxAnnouncement.swift; sourceTree = "<group>"; };
+		220C09E320A89FA4004F8E54 /* BxSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxSchema.swift; sourceTree = "<group>"; };
+		220C09E420A89FA4004F8E54 /* BxLeaderboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxLeaderboard.swift; sourceTree = "<group>"; };
+		220C09E520A89FA4004F8E54 /* BxInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxInstrument.swift; sourceTree = "<group>"; };
+		220C09E620A89FA4004F8E54 /* BxLiquidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxLiquidation.swift; sourceTree = "<group>"; };
+		220C09E720A89FA4004F8E54 /* BxApiKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxApiKey.swift; sourceTree = "<group>"; };
+		220C09E820A89FA4004F8E54 /* BxStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxStats.swift; sourceTree = "<group>"; };
+		220C09EA20A89FA4004F8E54 /* BxRestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BxRestAPI.swift; sourceTree = "<group>"; };
 		2265491A2074F40A0059E5D5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		2265491B2074F40A0059E5D5 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = SOURCE_ROOT; };
 		2265491F2074F4330059E5D5 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/Mac/Starscream.framework; sourceTree = SOURCE_ROOT; };
@@ -95,6 +164,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220C09D120A89FA4004F8E54 /* Bitmex */ = {
+			isa = PBXGroup;
+			children = (
+				220C09D220A89FA4004F8E54 /* Bitmex.swift */,
+				220C09D320A89FA4004F8E54 /* BxSocketAPI.swift */,
+				220C09D420A89FA4004F8E54 /* Rest */,
+				220C09E920A89FA4004F8E54 /* Socket */,
+				220C09EA20A89FA4004F8E54 /* BxRestAPI.swift */,
+			);
+			path = Bitmex;
+			sourceTree = "<group>";
+		};
+		220C09D420A89FA4004F8E54 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				220C09D520A89FA4004F8E54 /* BxSettlement.swift */,
+				220C09D620A89FA4004F8E54 /* BxOrderbook.swift */,
+				220C09D720A89FA4004F8E54 /* BxChat.swift */,
+				220C09D820A89FA4004F8E54 /* BxTrade.swift */,
+				220C09D920A89FA4004F8E54 /* BxPosition.swift */,
+				220C09DA20A89FA4004F8E54 /* BxRequest.swift */,
+				220C09DB20A89FA4004F8E54 /* BxInsurance.swift */,
+				220C09DC20A89FA4004F8E54 /* BxFunding.swift */,
+				220C09DD20A89FA4004F8E54 /* BxNotification.swift */,
+				220C09DE20A89FA4004F8E54 /* BxQuote.swift */,
+				220C09DF20A89FA4004F8E54 /* BxUser.swift */,
+				220C09E020A89FA4004F8E54 /* BxExecution.swift */,
+				220C09E120A89FA4004F8E54 /* BxOrder.swift */,
+				220C09E220A89FA4004F8E54 /* BxAnnouncement.swift */,
+				220C09E320A89FA4004F8E54 /* BxSchema.swift */,
+				220C09E420A89FA4004F8E54 /* BxLeaderboard.swift */,
+				220C09E520A89FA4004F8E54 /* BxInstrument.swift */,
+				220C09E620A89FA4004F8E54 /* BxLiquidation.swift */,
+				220C09E720A89FA4004F8E54 /* BxApiKey.swift */,
+				220C09E820A89FA4004F8E54 /* BxStats.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		220C09E920A89FA4004F8E54 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
 		226549192074F3CD0059E5D5 /* Frameworks iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +295,7 @@
 			children = (
 				2265496D2074F5A30059E5D5 /* General.swift */,
 				22876978209702A400071D0E /* Binance */,
+				220C09D120A89FA4004F8E54 /* Bitmex */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -355,12 +471,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220C0A0920A89FA4004F8E54 /* BxAnnouncement.swift in Sources */,
+				220C0A0120A89FA4004F8E54 /* BxQuote.swift in Sources */,
+				220C0A1720A89FA4004F8E54 /* BxRestAPI.swift in Sources */,
 				22876986209702A400071D0E /* BnRequest.swift in Sources */,
+				220C09FB20A89FA4004F8E54 /* BxInsurance.swift in Sources */,
+				220C0A0B20A89FA4004F8E54 /* BxSchema.swift in Sources */,
+				220C09ED20A89FA4004F8E54 /* BxSocketAPI.swift in Sources */,
 				22876980209702A400071D0E /* Binance.swift in Sources */,
 				22876982209702A400071D0E /* BnResponse.swift in Sources */,
+				220C09EB20A89FA4004F8E54 /* Bitmex.swift in Sources */,
+				220C0A1120A89FA4004F8E54 /* BxLiquidation.swift in Sources */,
+				220C0A1320A89FA4004F8E54 /* BxApiKey.swift in Sources */,
+				220C09F720A89FA4004F8E54 /* BxPosition.swift in Sources */,
+				220C09F120A89FA4004F8E54 /* BxOrderbook.swift in Sources */,
+				220C0A1520A89FA4004F8E54 /* BxStats.swift in Sources */,
+				220C09FF20A89FA4004F8E54 /* BxNotification.swift in Sources */,
 				22876984209702A400071D0E /* BnRestAPI.swift in Sources */,
+				220C09EF20A89FA4004F8E54 /* BxSettlement.swift in Sources */,
+				220C0A0720A89FA4004F8E54 /* BxOrder.swift in Sources */,
+				220C0A0320A89FA4004F8E54 /* BxUser.swift in Sources */,
 				2265496E2074F5A30059E5D5 /* General.swift in Sources */,
+				220C0A0520A89FA4004F8E54 /* BxExecution.swift in Sources */,
+				220C09F320A89FA4004F8E54 /* BxChat.swift in Sources */,
+				220C09F520A89FA4004F8E54 /* BxTrade.swift in Sources */,
 				22876988209702A400071D0E /* BnSocketAPI.swift in Sources */,
+				220C0A0F20A89FA4004F8E54 /* BxInstrument.swift in Sources */,
+				220C0A0D20A89FA4004F8E54 /* BxLeaderboard.swift in Sources */,
+				220C09F920A89FA4004F8E54 /* BxRequest.swift in Sources */,
+				220C09FD20A89FA4004F8E54 /* BxFunding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,12 +507,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220C0A0A20A89FA4004F8E54 /* BxAnnouncement.swift in Sources */,
+				220C0A0220A89FA4004F8E54 /* BxQuote.swift in Sources */,
+				220C0A1820A89FA4004F8E54 /* BxRestAPI.swift in Sources */,
 				22876987209702A400071D0E /* BnRequest.swift in Sources */,
+				220C09FC20A89FA4004F8E54 /* BxInsurance.swift in Sources */,
+				220C0A0C20A89FA4004F8E54 /* BxSchema.swift in Sources */,
+				220C09EE20A89FA4004F8E54 /* BxSocketAPI.swift in Sources */,
 				22876981209702A400071D0E /* Binance.swift in Sources */,
 				22876983209702A400071D0E /* BnResponse.swift in Sources */,
+				220C09EC20A89FA4004F8E54 /* Bitmex.swift in Sources */,
+				220C0A1220A89FA4004F8E54 /* BxLiquidation.swift in Sources */,
+				220C0A1420A89FA4004F8E54 /* BxApiKey.swift in Sources */,
+				220C09F820A89FA4004F8E54 /* BxPosition.swift in Sources */,
+				220C09F220A89FA4004F8E54 /* BxOrderbook.swift in Sources */,
+				220C0A1620A89FA4004F8E54 /* BxStats.swift in Sources */,
+				220C0A0020A89FA4004F8E54 /* BxNotification.swift in Sources */,
 				22876985209702A400071D0E /* BnRestAPI.swift in Sources */,
+				220C09F020A89FA4004F8E54 /* BxSettlement.swift in Sources */,
+				220C0A0820A89FA4004F8E54 /* BxOrder.swift in Sources */,
+				220C0A0420A89FA4004F8E54 /* BxUser.swift in Sources */,
 				2265496F2074F5A30059E5D5 /* General.swift in Sources */,
+				220C0A0620A89FA4004F8E54 /* BxExecution.swift in Sources */,
+				220C09F420A89FA4004F8E54 /* BxChat.swift in Sources */,
+				220C09F620A89FA4004F8E54 /* BxTrade.swift in Sources */,
 				22876989209702A400071D0E /* BnSocketAPI.swift in Sources */,
+				220C0A1020A89FA4004F8E54 /* BxInstrument.swift in Sources */,
+				220C0A0E20A89FA4004F8E54 /* BxLeaderboard.swift in Sources */,
+				220C09FA20A89FA4004F8E54 /* BxRequest.swift in Sources */,
+				220C09FE20A89FA4004F8E54 /* BxFunding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
