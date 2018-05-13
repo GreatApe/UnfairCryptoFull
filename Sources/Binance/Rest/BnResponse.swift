@@ -19,13 +19,13 @@ public struct BnResponse {
         public let timezone: String
         public let serverTime: Date
 
-        struct RateLimit: Decodable {
-            enum RateLimitType: String, Decodable {
+        public struct RateLimit: Decodable {
+            public enum RateLimitType: String, Decodable {
                 case requests = "REQUESTS"
                 case orders = "ORDERS"
             }
 
-            enum RateLimitInterval: String, Decodable {
+            public enum RateLimitInterval: String, Decodable {
                 case second = "SECOND"
                 case minute = "MINUTE"
                 case day = "DAY"
@@ -46,7 +46,7 @@ public struct BnResponse {
         public struct SymbolInfo: Decodable {
             public let symbol: BnSymbol
 
-            enum SymbolStatus: String, Decodable {
+            public enum SymbolStatus: String, Decodable {
                 case preTrading = "PRE_TRADING"
                 case trading = "TRADING"
                 case postTrading = "POST_TRADING"
@@ -247,7 +247,7 @@ public struct BnResponse {
         public let canDeposit: Bool
         public let updateTime: Date
 
-        struct Balance: Decodable {
+        public struct Balance: Decodable {
             public let asset: BnAsset // fixme: test
             public let free: Double
             public let locked: Double
@@ -255,7 +255,7 @@ public struct BnResponse {
 
         public let balances: [Balance]
 
-        var nonEmptyBalances: [Balance] { return balances.filter { $0.free + $0.locked > 0 } }
+        public var nonEmptyBalances: [Balance] { return balances.filter { $0.free + $0.locked > 0 } }
     }
 
     public struct MyTrades: Decodable {

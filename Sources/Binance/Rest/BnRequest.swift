@@ -251,19 +251,19 @@ public struct BnOrder {
         }
     }
 
-    let api: BnRestAPI
+    public let api: BnRestAPI
 
-    let symbol: BnSymbol
-    let side: BnOrderSide
-    let type: BnOrderType
-    let timeInForce: BnTimeInForce?
-    let quantity: Double // DECIMAL
-    let price: Double? // DECIMAL
+    public let symbol: BnSymbol
+    public let side: BnOrderSide
+    public let type: BnOrderType
+    public let timeInForce: BnTimeInForce?
+    public let quantity: Double // DECIMAL
+    public let price: Double? // DECIMAL
 
-    let newClientOrderId: String? // A unique id for the order. Automatically generated if not sent.
+    public let newClientOrderId: String? // A unique id for the order. Automatically generated if not sent.
 
-    let stopPrice: Double? // DECIMAL Used with STOP_LOSS, STOP_LOSS_LIMIT, TAKE_PROFIT, and TAKE_PROFIT_LIMIT orders
-    let icebergQty: Double? // DECIMAL Used with LIMIT, STOP_LOSS_LIMIT, and TAKE_PROFIT_LIMIT to create an iceberg order
+    public let stopPrice: Double? // DECIMAL Used with STOP_LOSS, STOP_LOSS_LIMIT, TAKE_PROFIT, and TAKE_PROFIT_LIMIT orders
+    public let icebergQty: Double? // DECIMAL Used with LIMIT, STOP_LOSS_LIMIT, and TAKE_PROFIT_LIMIT to create an iceberg order
 
     public init(_ api: BnRestAPI, symbol: BnSymbol, side: BnOrderSide, type: BnOrderType, timeInForce: BnTimeInForce? = nil, quantity: Double, price: Double? = nil, stopPrice: Double? = nil, newClientOrderId: String? = nil, icebergQty: Double? = nil) {
         self.api = api

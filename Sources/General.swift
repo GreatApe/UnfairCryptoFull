@@ -10,15 +10,15 @@ import Foundation
 import Alamofire
 
 public protocol StringConvertible { var stringValue: String { get } }
-public extension String: StringConvertible { public var stringValue: String { return self } }
-public extension Bool: StringConvertible { public var stringValue: String { return self ? "true" : "false" } }
-public extension Int: StringConvertible { public var stringValue: String { return String(self) } }
-public extension Int64: StringConvertible { public var stringValue: String { return String(self) } }
-public extension Double: StringConvertible { public var stringValue: String { return String(self) } }
+extension String: StringConvertible { public var stringValue: String { return self } }
+extension Bool: StringConvertible { public var stringValue: String { return self ? "true" : "false" } }
+extension Int: StringConvertible { public var stringValue: String { return String(self) } }
+extension Int64: StringConvertible { public var stringValue: String { return String(self) } }
+extension Double: StringConvertible { public var stringValue: String { return String(self) } }
 
 public extension RawRepresentable where RawValue == String { public var stringValue: String { return rawValue } }
 
-public extension Array: StringConvertible where Element: StringConvertible {
+extension Array: StringConvertible where Element: StringConvertible {
     public var stringValue: String {
         return self.map { $0.stringValue }.joined(separator: ",")
     }
@@ -77,8 +77,8 @@ public struct Quote: Decodable, Equatable, CustomStringConvertible {
 }
 
 public enum Side: String, Decodable {
-    public case buy = "Buy"
-    public case sell = "Sell"
+    case buy = "Buy"
+    case sell = "Sell"
 }
 
 extension Quote: Comparable {
