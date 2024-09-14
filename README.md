@@ -35,13 +35,13 @@ Binance.setup(id: "My API id", secret: "My API secret")
 
 // Places a simple limit buy order for 8 Cardanos's at a price of 0.00003750 BTC, and prints the order status
 func handleOrderResponse(response: BnResponse.Order.Full) {
-  print("Orderstatus: \(response.status)")
+    print("Orderstatus: \(response.status)")
 }
 
 Binance.rest
-  .order
-  .limit(symbol: .adabtc, side: .buy, timeInForce: .goodTillCancel, quantity: 1000, price: 0.00003750)
-  .handled(by: handleOrderResponse)
+    .order
+    .limit(symbol: .adabtc, side: .buy, timeInForce: .goodTillCancel, quantity: 1000, price: 0.00003750)
+    .handled(by: handleOrderResponse)
 ```
 
 ## Requirements
